@@ -262,50 +262,49 @@ h4, .h4 { font-size: var(--fs-600); font-weight: 600; }
 }
 
 /* =========================================================
-   Hero — bố cục bất đối xứng với các quần thể vi khuẩn
+   Hero — ảnh nhà máy thật làm nền, chữ phủ trên vùng tối bên trái
    ========================================================= */
 .hero {
   position: relative;
-  background: linear-gradient(165deg, var(--verdant) 0%, var(--verdant-deep) 100%);
+  background:
+    linear-gradient(100deg, rgba(15,33,27,0.94) 0%, rgba(15,33,27,0.82) 38%, rgba(15,33,27,0.42) 68%, rgba(15,33,27,0.08) 100%),
+    url('/images/hero-bg.jpg') center / cover no-repeat;
   color: var(--paper);
   overflow: hidden;
-  padding: var(--space-6) 0 var(--space-7);
+  padding: var(--space-7) 0 var(--space-6);
+  min-height: 560px;
+  display: flex;
+  align-items: center;
 }
 .hero__grid {
   display: grid;
   gap: var(--space-5);
   position: relative;
   z-index: 2;
-}
-@media (min-width: 960px) {
-  .hero__grid { grid-template-columns: 1.1fr 0.9fr; align-items: center; }
+  width: 100%;
 }
 .hero__copy { max-width: 42ch; }
 .hero h1 { margin-bottom: var(--space-3); }
-.hero .lede { color: rgba(241, 243, 234, 0.82); margin-bottom: var(--space-4); }
+.hero .lede { color: rgba(241, 243, 234, 0.88); margin-bottom: var(--space-4); }
 .hero__ctas { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-5); }
-.hero__trust { display: flex; flex-wrap: wrap; gap: var(--space-4); font-size: var(--fs-300); color: rgba(241,243,234,0.7); }
+.hero__trust { display: flex; flex-wrap: wrap; gap: var(--space-4); font-size: var(--fs-300); color: rgba(241,243,234,0.78); }
 .hero__trust strong { color: var(--paper); font-size: 1.3em; display: block; font-weight: 700; }
 
-.hero__art { position: relative; min-height: 320px; display: flex; align-items: center; justify-content: center; }
-.hero__art svg { width: 100%; height: auto; max-width: 420px; }
-
-/* vệt sáng nền dạng quần thể tế bào, rải rác không đối xứng */
-.hero::before, .hero::after {
-  content: '';
+/* =========================================================
+   Dải ảnh cơ sở hoạt động — ngay dưới hero
+   ========================================================= */
+.ops-strip { display: grid; grid-template-columns: repeat(2, 1fr); gap: 3px; }
+@media (min-width: 760px) { .ops-strip { grid-template-columns: repeat(4, 1fr); } }
+.ops-strip__item { position: relative; aspect-ratio: 4 / 3; overflow: hidden; }
+.ops-strip__item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ops-strip__item span {
   position: absolute;
-  border-radius: 50%;
-  filter: blur(2px);
-}
-.hero::before {
-  width: 420px; height: 420px;
-  background: radial-gradient(circle, rgba(207,138,46,0.18), transparent 70%);
-  top: -120px; right: -80px;
-}
-.hero::after {
-  width: 300px; height: 300px;
-  background: radial-gradient(circle, rgba(168,194,86,0.14), transparent 70%);
-  bottom: -100px; left: 10%;
+  left: 0; right: 0; bottom: 0;
+  padding: 0.6em 0.8em;
+  font-size: var(--fs-300);
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(to top, rgba(15,33,27,0.85), transparent);
 }
 
 /* =========================================================
@@ -362,7 +361,7 @@ h4, .h4 { font-size: var(--fs-600); font-weight: 600; }
   background: var(--paper-dim);
   box-shadow: var(--shadow-soft);
 }
-.showcase-item__media img, .showcase-item__media svg { width: 100%; height: 100%; object-fit: cover; }
+.showcase-item__media img, .showcase-item__media svg { width: 100%; height: 100%; object-fit: contain; }
 .showcase-item__media--amber { background: #f3e3c6; }
 .showcase-item__media--plum { background: #d9e6e9; }
 .showcase-item__media--lime { background: #e6ecd1; }
@@ -549,7 +548,7 @@ h4, .h4 { font-size: var(--fs-600); font-weight: 600; }
 .product-grid { display: grid; gap: var(--space-4); grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
 .product-card { display: flex; flex-direction: column; gap: var(--space-2); }
 .product-card__media { aspect-ratio: 3 / 4; border-radius: var(--radius-md); overflow: hidden; display: flex; align-items: center; justify-content: center; margin-bottom: 0.4em; background: var(--paper-dim); box-shadow: var(--shadow-soft); }
-.product-card__media img, .product-card__media svg { width: 100%; height: 100%; object-fit: cover; }
+.product-card__media img, .product-card__media svg { width: 100%; height: 100%; object-fit: contain; }
 .product-card__category { font-size: var(--fs-300); color: var(--amber-deep); font-weight: 700; }
 .product-card__name { font-size: var(--fs-600); font-weight: 600; }
 .product-card__tagline { color: var(--ink-soft); font-size: var(--fs-300); }
@@ -572,10 +571,20 @@ h4, .h4 { font-size: var(--fs-600); font-weight: 600; }
    ========================================================= */
 .product-detail { display: grid; gap: var(--space-6); }
 @media (min-width: 900px) { .product-detail { grid-template-columns: 1fr 1fr; align-items: start; } }
-.product-detail__media { border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 3 / 4; display: flex; align-items: center; justify-content: center; max-width: 380px; margin: 0 auto; background: var(--paper-dim); box-shadow: var(--shadow-soft); }
-.product-detail__media img, .product-detail__media svg { width: 100%; height: 100%; object-fit: cover; }
+.product-detail__media {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 420px;
+  margin: 0 auto;
+  background: var(--paper-dim);
+  box-shadow: var(--shadow-soft);
+}
+.product-detail__media img, .product-detail__media svg { width: 100%; height: auto; max-height: 560px; object-fit: contain; display: block; }
 
-.product-thumbs { display: flex; gap: 0.6em; justify-content: center; margin-top: var(--space-2); flex-wrap: wrap; max-width: 380px; margin-left: auto; margin-right: auto; }
+.product-thumbs { display: flex; gap: 0.6em; justify-content: center; margin-top: var(--space-2); flex-wrap: wrap; max-width: 420px; margin-left: auto; margin-right: auto; }
 .product-thumb {
   width: 56px;
   height: 56px;

@@ -35,7 +35,7 @@
     ],
     "storage": "Trời lạnh nên kéo dài thời gian ủ thêm 24 giờ và tăng nhẹ lượng men. Thời gian dùng sau ủ: rau/bèo/chuối/cám trong 15 ngày; cá/thóc/ngô hạt/cỏ trong 30–60 ngày. Luôn đậy kín trong suốt quá trình ủ.",
     "image": "/images/product-real-f.jpg",
-    "gallery": ["/images/gallery-f-1.jpg", "/images/gallery-f-3.jpg"],
+    "gallery": ["/images/gallery-f-full-1.jpg", "/images/gallery-f-full-2.jpg", "/images/gallery-f-full-3.jpg", "/images/gallery-f-full-4.jpg", "/images/gallery-f-full-5.jpg", "/images/gallery-f-full-6.jpg"],
     "accent": "amber",
     "featured": true
   },
@@ -69,7 +69,7 @@
     ],
     "storage": "Không độc hại với người, gia súc, gia cầm, thuỷ hải sản; không cần thời gian cách ly. Có thể tăng liều 2–3 lần để tăng khả năng phân huỷ và khử mùi. Bảo quản nơi khô ráo, thoáng mát, tránh nắng trực tiếp và nơi ẩm cao, đóng kín bao bì sau mỗi lần dùng.",
     "image": "/images/product-real-green.jpg",
-    "gallery": ["/images/gallery-green-2.jpg", "/images/gallery-green-3.jpg"],
+    "gallery": ["/images/gallery-green-full-1.jpg", "/images/gallery-green-full-2.jpg", "/images/gallery-green-full-3.jpg", "/images/gallery-green-full-4.jpg", "/images/gallery-green-full-5.jpg"],
     "accent": "lime",
     "featured": false
   },
@@ -108,7 +108,7 @@
     ],
     "storage": "Hàm lượng Malt 10–12%, không men nấm mốc, không vi trùng gây bệnh. Bảo quản nơi khô ráo, thoáng mát, tránh nắng trực tiếp và nơi ẩm cao, đóng kín bao bì sau khi dùng.",
     "image": "/images/product-real-bio4.jpg",
-    "gallery": ["/images/gallery-bio4-2.jpg", "/images/gallery-bio4-3.jpg"],
+    "gallery": ["/images/gallery-bio4-full-1.jpg", "/images/gallery-bio4-full-2.jpg", "/images/gallery-bio4-full-3.jpg", "/images/gallery-bio4-full-4.jpg", "/images/gallery-bio4-full-5.jpg", "/images/gallery-bio4-full-6.jpg"],
     "accent": "plum",
     "featured": true
   },
@@ -144,7 +144,7 @@
     ],
     "storage": "Không trộn với hoá chất, thuốc trừ sâu. An toàn cho vật nuôi. Bảo quản nơi khô ráo, thoáng mát dưới 30°C, tránh nắng trực tiếp, đóng kín bao bì sau khi dùng, để xa tầm tay trẻ em.",
     "image": "/images/product-real-bed.jpg",
-    "gallery": ["/images/gallery-bed-2.jpg", "/images/gallery-bed-3.jpg"],
+    "gallery": ["/images/gallery-bed-full-1.jpg", "/images/gallery-bed-full-2.jpg", "/images/gallery-bed-full-3.jpg", "/images/gallery-bed-full-4.jpg"],
     "accent": "amber",
     "featured": false
   },
@@ -179,7 +179,7 @@
     ],
     "storage": "Độ ẩm ≤10%, không kháng sinh, hoóc-môn, chất cấm. Bảo quản nơi khô ráo, thoáng mát dưới 30°C, tránh nắng trực tiếp, đóng kín bao bì sau khi dùng, để xa tầm tay trẻ em.",
     "image": "/images/product-real-digest.jpg",
-    "gallery": ["/images/gallery-digest-2.jpg", "/images/gallery-digest-3.jpg"],
+    "gallery": ["/images/gallery-digest-full-1.jpg", "/images/gallery-digest-full-2.jpg", "/images/gallery-digest-full-3.jpg", "/images/gallery-digest-full-4.jpg", "/images/gallery-digest-full-5.jpg"],
     "accent": "plum",
     "featured": true
   }
