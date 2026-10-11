@@ -31,7 +31,17 @@
         <div class="summary-row"><span>Phí vận chuyển</span><span id="sum-shipping">0₫</span></div>
         <p style="font-size: var(--fs-300); color: var(--ink-soft);">Miễn phí vận chuyển cho đơn từ 300.000₫</p>
         <div class="summary-row summary-row--total"><span>Tổng cộng</span><span id="sum-total">0₫</span></div>
-        <a href="/thanh-toan" class="btn btn--primary btn--block" style="margin-top: var(--space-3);">Tiến hành thanh toán</a>
+        <button type="button" id="checkout-zalo-btn" class="btn btn--primary btn--block" data-zalo="<%= site.zalo %>" style="margin-top: var(--space-3);">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.83 1.44 5.36 3.7 7.03-.12.98-.46 2.3-1.3 3.47 1.6-.2 3.14-.9 4.33-1.78 1.02.3 2.12.46 3.27.46 5.52 0 10-4.03 10-9S17.52 2 12 2z"/></svg>
+          Đặt hàng qua Zalo
+        </button>
+        <p style="font-size: var(--fs-300); color: var(--ink-soft); margin-top: var(--space-2);">Bấm để mở Zalo nhắn tin cho MENOVA — nội dung đơn hàng đã được soạn sẵn, bạn chỉ cần dán và gửi.</p>
+
+        <div id="zalo-message-panel" style="display:none; margin-top: var(--space-3);">
+          <div class="form-status form-status--success">Đã mở Zalo và sao chép nội dung đơn hàng. Nếu khung chat chưa tự dán, bạn có thể dán (Ctrl+V) hoặc copy lại nội dung bên dưới.</div>
+          <textarea id="zalo-message-text" class="zalo-message-text" rows="6" readonly></textarea>
+          <button type="button" id="zalo-copy-again" class="btn btn--outline btn--sm" style="margin-top: var(--space-2);">Sao chép lại nội dung</button>
+        </div>
       </aside>
     </div>
   </div>

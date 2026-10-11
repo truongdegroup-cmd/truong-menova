@@ -41,19 +41,6 @@ router.get('/gio-hang', (req, res) => {
   res.render('cart', { page: 'cart', site: SITE });
 });
 
-router.get('/thanh-toan', (req, res) => {
-  res.render('checkout', { page: 'checkout', site: SITE });
-});
-
-router.get('/order-success', (req, res) => {
-  res.render('order-success', {
-    page: 'order-success',
-    site: SITE,
-    orderCode: req.query.orderCode || '',
-    status: req.query.status || 'success',
-  });
-});
-
 router.get('/blog', (req, res) => {
   res.render('blog', { page: 'blog', site: SITE, posts });
 });

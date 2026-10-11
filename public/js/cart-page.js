@@ -65,4 +65,59 @@ function renderCartPage() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', renderCartPage);
+function buildZaloOrderMessage(items, subtotal, shipping, total) {
+  const lines = ['Chào MENOVA, tôi muốn đặt mua:', ''];
+  items.forEach((item) => {
+    lines.push(`- ${item.name} x${item.qty} = ${formatVND(item.price * item.qty)}`);
+  });
+  lines.push('');
+  lines.push(`Tạm tính: ${formatVND(subtotal)}`);
+  lines.push(`Phí vận chuyển (dự kiến): ${shipping === 0 ? 'Miễn phí' : formatVND(shipping)}`);
+  lines.push(`Tổng cộng: ${formatVND(total)}`);
+  lines.push('');
+  lines.push('Vui lòng tư vấn và xác nhận đơn giúp tôi. Cảm ơn MENOVA!');
+  return lines.join('\n');
+}
+
+function copyToClipboard(text) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).catch(() => {});
+  }
+}
+
+function bindCheckoutZalo() {
+  const btn = document.getElementById('checkout-zalo-btn');
+  const copyAgainBtn = document.getElementById('zalo-copy-again');
+  if (!btn) return;
+
+  btn.addEventListener('click', () => {
+    const items = cartRead();
+    if (items.length === 0) return;
+
+    const subtotal = cartSubtotal();
+    const shipping = subtotal >= FREE_SHIPPING_THRESHOLD ? 0 : SHIPPING_FEE;
+    const total = subtotal + shipping;
+    const message = buildZaloOrderMessage(items, subtotal, shipping, total);
+
+    window.open(btn.dataset.zalo, '_blank', 'noopener');
+
+    const panel = document.getElementById('zalo-message-panel');
+    const textarea = document.getElementById('zalo-message-text');
+    textarea.value = message;
+    panel.style.display = 'block';
+    copyToClipboard(message);
+  });
+
+  if (copyAgainBtn) {
+    copyAgainBtn.addEventListener('click', () => {
+      const textarea = document.getElementById('zalo-message-text');
+      textarea.select();
+      copyToClipboard(textarea.value);
+    });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderCartPage();
+  bindCheckoutZalo();
+});

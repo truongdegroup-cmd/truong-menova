@@ -26,7 +26,7 @@
         <h3 class="product-card__name"><%= p.name %></h3>
         <p class="product-card__tagline"><%= p.tagline %></p>
         <div class="product-card__footer">
-          <span class="price"><%= p.price.toLocaleString('vi-VN') %>₫</span>
+          <span class="price"><% if (p.compareAtPrice > p.price) { %><span class="price-compare"><%= p.compareAtPrice.toLocaleString('vi-VN') %>₫</span><% } %><%= p.price.toLocaleString('vi-VN') %>₫</span>
           <span class="btn btn--outline btn--sm">Xem chi tiết</span>
         </div>
       </a>
