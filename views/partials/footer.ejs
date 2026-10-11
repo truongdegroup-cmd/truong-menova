@@ -1,0 +1,66 @@
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo"><img src="/images/logo-icon.png" alt="MENOVA" width="38" height="38" class="logo__mark" />MENOVA</a>
+          <p class="footer-note">Vi sinh ứng dụng chăn nuôi và nông nghiệp hữu cơ. Nuôi khoẻ từ gốc — tiết kiệm chi phí, giảm dịch bệnh, thân thiện môi trường.</p>
+        </div>
+        <div>
+          <h4>Sản phẩm</h4>
+          <ul>
+            <li><a href="/san-pham/menova-f">MENOVA F</a></li>
+            <li><a href="/san-pham/menova-green">MENOVA GREEN</a></li>
+            <li><a href="/san-pham/menova-bio-4-plus">MENOVA BIO 4+</a></li>
+            <li><a href="/san-pham/menova-bed">MENOVA BED</a></li>
+            <li><a href="/san-pham/menova-digest">MENOVA DIGEST</a></li>
+            <li><a href="/san-pham">Xem tất cả</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Thương hiệu</h4>
+          <ul>
+            <li><a href="/ve-menova">Về MENOVA</a></li>
+            <li><a href="/blog">Góc kiến thức</a></li>
+            <li><a href="/lien-he">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Liên hệ</h4>
+          <ul>
+            <li><a href="tel:<%= site.phoneRaw %>"><%= site.phone %></a></li>
+            <li><a href="mailto:<%= site.email %>"><%= site.email %></a></li>
+            <li><span><%= site.address %></span></li>
+          </ul>
+          <div class="social-row">
+            <a href="<%= site.facebook %>" target="_blank" rel="noopener" aria-label="Fanpage Facebook MENOVA" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33V22c4.78-.8 8.44-4.94 8.44-9.94z"/></svg>
+              <span>Fanpage Facebook</span>
+            </a>
+            <a href="<%= site.zalo %>" target="_blank" rel="noopener" aria-label="Zalo MENOVA" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.83 1.44 5.36 3.7 7.03-.12.98-.46 2.3-1.3 3.47 1.6-.2 3.14-.9 4.33-1.78 1.02.3 2.12.46 3.27.46 5.52 0 10-4.03 10-9S17.52 2 12 2z"/></svg>
+              <span>Zalo: <%= site.phone %></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <%= new Date().getFullYear() %> <%= site.legalName %> — ĐKKD số <%= site.dkkd %></span>
+        <span><%= site.website %></span>
+      </div>
+      <p class="footer-disclaimer">Sản phẩm là chế phẩm vi sinh dùng trong chăn nuôi, trồng trọt và xử lý môi trường — không phải thuốc thú y, không phải hoá chất bảo vệ thực vật. Hiệu quả sử dụng có thể khác nhau tuỳ điều kiện chuồng trại, đất đai và cách dùng thực tế. Dùng đúng liều lượng, cách bảo quản theo hướng dẫn trên bao bì.</p>
+    </div>
+  </footer>
+
+  <div class="float-contact">
+    <a href="<%= site.zalo %>" target="_blank" rel="noopener" class="float-contact__btn float-contact__btn--zalo" aria-label="Chat Zalo với MENOVA">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.83 1.44 5.36 3.7 7.03-.12.98-.46 2.3-1.3 3.47 1.6-.2 3.14-.9 4.33-1.78 1.02.3 2.12.46 3.27.46 5.52 0 10-4.03 10-9S17.52 2 12 2z"/></svg>
+    </a>
+    <a href="<%= site.facebook %>" target="_blank" rel="noopener" class="float-contact__btn float-contact__btn--fb" aria-label="Nhắn tin Fanpage Facebook MENOVA">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33V22c4.78-.8 8.44-4.94 8.44-9.94z"/></svg>
+    </a>
+  </div>
+  <script src="/js/cart.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

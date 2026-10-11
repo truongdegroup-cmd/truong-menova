@@ -1,0 +1,51 @@
+<%- include('partials/header') %>
+
+<section class="page-head">
+  <div class="container">
+    <p class="breadcrumb"><a href="/">Trang chủ</a> / <span>Sản phẩm</span></p>
+    <h1>Mỗi sản phẩm, một việc nhà nông</h1>
+    <p class="lede">Không có "vi sinh đa năng cho mọi việc". Chọn theo đúng nhu cầu của bạn — ủ thức ăn chăn nuôi, ủ phân hữu cơ, cải tạo đất, khử mùi chuồng trại, hay hỗ trợ tiêu hoá vật nuôi.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="filter-row" role="group" aria-label="Lọc theo nhu cầu">
+      <span class="filter-chip is-active" data-filter="all">Tất cả</span>
+      <% const cats = [...new Set(products.map(p => p.category))]; cats.forEach(c => { %>
+        <span class="filter-chip" data-filter="<%= c %>"><%= c %></span>
+      <% }) %>
+    </div>
+    <div class="product-grid" id="product-grid">
+      <% products.forEach(p => { %>
+      <a href="/san-pham/<%= p.slug %>" class="product-card" data-category="<%= p.category %>">
+        <div class="product-card__media showcase-item__media--<%= p.accent %>">
+          <img src="<%= p.image %>" alt="" width="140" height="140" />
+        </div>
+        <p class="product-card__category"><%= p.category %></p>
+        <h3 class="product-card__name"><%= p.name %></h3>
+        <p class="product-card__tagline"><%= p.tagline %></p>
+        <div class="product-card__footer">
+          <span class="price"><%= p.price.toLocaleString('vi-VN') %>₫</span>
+          <span class="btn btn--outline btn--sm">Xem chi tiết</span>
+        </div>
+      </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.filter-chip').forEach((chip) => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('.filter-chip').forEach((c) => c.classList.remove('is-active'));
+      chip.classList.add('is-active');
+      const filter = chip.dataset.filter;
+      document.querySelectorAll('#product-grid .product-card').forEach((card) => {
+        card.style.display = filter === 'all' || card.dataset.category === filter ? '' : 'none';
+      });
+    });
+  });
+</script>
+
+<%- include('partials/footer') %>

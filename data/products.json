@@ -1,0 +1,186 @@
+[
+  {
+    "id": 1,
+    "slug": "menova-f",
+    "name": "MENOVA F",
+    "tagline": "Men vi sinh ủ chín thức ăn chăn nuôi",
+    "category": "Ủ thức ăn chăn nuôi",
+    "price": 89000,
+    "compareAtPrice": 89000,
+    "highlight": "Bacillus subtilis ≥ 3 × 10⁹ CFU/g",
+    "composition": [
+      "Bacillus subtilis ≥ 3 × 10⁹ CFU/g",
+      "Lactobacillus plantarum ≥ 1 × 10⁷ CFU/g",
+      "Saccharomyces cerevisiae ≥ 1 × 10⁸ CFU/g",
+      "Enzyme Protease 60.000 UI/kg",
+      "Enzyme Cellulase 40.000 UI/kg",
+      "Độ ẩm ≤ 12%, không hoóc-môn, kháng sinh, hoá chất độc hại"
+    ],
+    "benefits": [
+      "Lên men nhanh, không cần đun nấu nguyên liệu",
+      "Vật nuôi hấp thu tốt, ăn ngon, lớn nhanh, ngủ tốt",
+      "Hỗ trợ ổn định đường ruột, giảm rối loạn tiêu hoá",
+      "Giảm mùi hôi chuồng trại, khử nấm mốc thức ăn",
+      "Tận dụng nguyên liệu sẵn có, giảm chi phí thức ăn"
+    ],
+    "description": "MENOVA F phối hợp 3 chủng vi sinh vật có lợi cùng enzyme Protease, Cellulase, giúp ủ chín nhiều loại nguyên liệu sẵn có tại địa phương — ngô, cám gạo, chuối, sắn, cá tạp, thóc — thành thức ăn lên men thơm, dễ tiêu cho heo, gà, vịt, trâu, bò, dê, thuỷ sản mà không cần đun nấu.",
+    "packSize": "Gói 500g — ủ được 14 – 55kg nguyên liệu tuỳ loại",
+    "usage": [
+      { "label": "Ủ nguyên liệu xanh (ngô, chuối, rau, bèo)", "detail": "100g men ủ được 25–33kg hỗn hợp. Tỉ lệ 60–70% nguyên liệu xanh + 30–40% cám ngô/gạo, không cần thêm nước. Ủ 2–4 ngày (lạnh ủ dài hơn, nóng ủ ngắn hơn)." },
+      { "label": "Ủ tinh bột khô (cám ngô, cám gạo, bột sắn)", "detail": "100g men ủ được 33–55kg nguyên liệu khô. Dùng 100% nguyên liệu khô, thêm 12–14 lít nước/40kg. Ủ 2–4 ngày." },
+      { "label": "Ủ bã đậu, bã rượu, bã bia", "detail": "100g men ủ được 20–25kg hỗn hợp. Tỉ lệ 50–60% bã ướt + 40–50% cám ngô/gạo, không cần thêm nước. Ủ 2–4 ngày." },
+      { "label": "Ủ cá, phụ phẩm cá", "detail": "100g men ủ được 14–20kg hỗn hợp. 60% cá băm + 40% cám ngô/gạo, nước xấp mặt cá, thêm 0,2–0,3kg muối. Ủ 7–10 ngày." },
+      { "label": "Ủ thóc hạt, ngô hạt", "detail": "100g men ủ được 40kg hỗn hợp đã luộc hoặc nghiền. Thêm 35–40% nước (12–15 lít), ngâm nguyên liệu 6–12 giờ trước khi ủ. Ủ 2–4 ngày." },
+      { "label": "Ủ sắn tươi, củ sắn tươi", "detail": "Gọt vỏ, băm nhỏ, phơi héo hoặc trộn cám khô để hạ độ ướt. Tỉ lệ 60–70% sắn băm + 30–40% cám khô. 100g men ủ được 30kg. Ủ kín 3–6 ngày." }
+    ],
+    "storage": "Trời lạnh nên kéo dài thời gian ủ thêm 24 giờ và tăng nhẹ lượng men. Thời gian dùng sau ủ: rau/bèo/chuối/cám trong 15 ngày; cá/thóc/ngô hạt/cỏ trong 30–60 ngày. Luôn đậy kín trong suốt quá trình ủ.",
+    "image": "/images/product-real-f.jpg",
+    "gallery": ["/images/gallery-f-1.jpg", "/images/gallery-f-3.jpg"],
+    "accent": "amber",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "slug": "menova-green",
+    "name": "MENOVA GREEN",
+    "tagline": "Men ủ rác nhà bếp thành phân hữu cơ",
+    "category": "Ủ phân hữu cơ",
+    "price": 86000,
+    "compareAtPrice": 86000,
+    "highlight": "Ủ rác nhà bếp → phân hữu cơ, không mùi",
+    "composition": [
+      "Bacillus spp. (B. subtilis, B. licheniformis)",
+      "Saccharomyces cerevisiae",
+      "Lactobacillus plantarum",
+      "Bột gạo, bột mì (chất mang)"
+    ],
+    "benefits": [
+      "Phân huỷ nhanh rác nhà bếp: cơm, rau, củ, quả, vỏ trái cây",
+      "Khử mùi hôi, giảm khí độc từ rác thải, hầm biogas",
+      "Ức chế trứng giun sán, E.coli, coliforms trong quá trình ủ",
+      "Tăng dinh dưỡng đất, hạn chế bệnh héo rũ, thối cổ rễ",
+      "An toàn với người, gia súc, gia cầm, thuỷ sản"
+    ],
+    "description": "MENOVA GREEN biến rác hữu cơ nhà bếp thành nguồn phân hữu cơ giàu dinh dưỡng ngay tại nhà — giảm rác thải ra môi trường, khử mùi hôi, và tạo nguồn hữu cơ cải tạo đất cho vườn rau, cây trồng.",
+    "packSize": "Gói 500g — ủ được 100–200kg rác thải, hoặc 150kg đậu tương/cá/trùn quế",
+    "usage": [
+      { "label": "Ủ rác thải hữu cơ", "detail": "Dùng 500g cho 100–200kg rác thải. Băm nhỏ rau củ hỏng, vỏ trái cây, cơm thừa. Rắc đều men lên từng lớp, đổ nước xấp mặt rác, đậy kín 7–15 ngày. Dịch sau ủ pha nước tưới cây; bã dùng cải tạo đất." },
+      { "label": "Ủ đậu tương, cá, trùn quế, trứng", "detail": "Dùng 500g cho 150kg nguyên liệu, làm nguồn hữu cơ phục vụ chăn nuôi, trồng trọt." }
+    ],
+    "storage": "Không độc hại với người, gia súc, gia cầm, thuỷ hải sản; không cần thời gian cách ly. Có thể tăng liều 2–3 lần để tăng khả năng phân huỷ và khử mùi. Bảo quản nơi khô ráo, thoáng mát, tránh nắng trực tiếp và nơi ẩm cao, đóng kín bao bì sau mỗi lần dùng.",
+    "image": "/images/product-real-green.jpg",
+    "gallery": ["/images/gallery-green-2.jpg", "/images/gallery-green-3.jpg"],
+    "accent": "lime",
+    "featured": false
+  },
+  {
+    "id": 3,
+    "slug": "menova-bio-4-plus",
+    "name": "MENOVA BIO 4+",
+    "tagline": "Vi sinh đa năng cho nông nghiệp hữu cơ",
+    "category": "Cải tạo đất & xử lý nước",
+    "price": 86000,
+    "compareAtPrice": 86000,
+    "highlight": "4 chủng: Trichoderma, Bacillus, Saccharomyces, Streptomyces",
+    "composition": [
+      "Trichoderma — đối kháng nấm bệnh",
+      "Bacillus — phân giải chất hữu cơ",
+      "Saccharomyces — thúc đẩy sinh trưởng",
+      "Streptomyces — ức chế vi khuẩn gây hại",
+      "Thóc, gạo hữu cơ, khoáng chất, cám men vi sinh"
+    ],
+    "benefits": [
+      "Đối kháng, kìm hãm nấm bệnh gây hại cây trồng",
+      "Giúp rễ phát triển mạnh, phục hồi cây suy yếu",
+      "Khắc phục vàng lá, thối rễ, tuyến trùng trên cây ăn quả",
+      "Khử mùi hôi chuồng trại, dùng làm đệm lót sinh học",
+      "Xử lý nước thải nông nghiệp, ao hồ ô nhiễm, bể phốt"
+    ],
+    "description": "MENOVA BIO 4+ là chế phẩm vi sinh đa năng, dùng được cho cây trồng, chăn nuôi, xử lý chất hữu cơ và môi trường nước — một sản phẩm, nhiều giải pháp cho nền nông nghiệp bền vững.",
+    "packSize": "Gói 500g",
+    "usage": [
+      { "label": "Rau ăn lá, cây lương thực", "detail": "Bón lót 1–1,5kg/360m² (1 sào Bắc Bộ) trước khi gieo trồng. Có thể trộn cùng phân hữu cơ hoặc NPK để bón." },
+      { "label": "Rau ăn củ, quả", "detail": "Bón 2kg/360m², lần 1 sau gieo trồng 15–20 ngày. Giúp phòng lở cổ rễ, héo xanh vi khuẩn, thối bắp." },
+      { "label": "Cây công nghiệp, cây ăn quả lâu năm", "detail": "Dùng 3–5kg/1.000m² tuỳ giai đoạn sinh trưởng, bón quanh tán cây kết hợp phân hữu cơ. Bón 2 lần/năm để phòng thối rễ, tuyến trùng." },
+      { "label": "Chăn nuôi — đệm lót sinh học", "detail": "2–3kg/1 tấn nguyên liệu, trộn cùng trấu hoặc mùn cưa để khử mùi và phân huỷ chất thải." },
+      { "label": "Rác hữu cơ, phụ phẩm nông nghiệp", "detail": "1–2kg xử lý 1 tấn nguyên liệu, hoặc 100–200m² ao hồ tuỳ mức độ ô nhiễm." },
+      { "label": "Phun cho cây trồng / xử lý bể phốt", "detail": "30–50g pha 1 bình 16–18 lít để phun cây. Xử lý bể phốt: 1–2kg mỗi 10 ngày, xả trực tiếp vào bể." }
+    ],
+    "storage": "Hàm lượng Malt 10–12%, không men nấm mốc, không vi trùng gây bệnh. Bảo quản nơi khô ráo, thoáng mát, tránh nắng trực tiếp và nơi ẩm cao, đóng kín bao bì sau khi dùng.",
+    "image": "/images/product-real-bio4.jpg",
+    "gallery": ["/images/gallery-bio4-2.jpg", "/images/gallery-bio4-3.jpg"],
+    "accent": "plum",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "slug": "menova-bed",
+    "name": "MENOVA BED",
+    "tagline": "Men vi sinh rắc chuồng, khử mùi, làm đệm lót sinh học",
+    "category": "Khử mùi chuồng trại",
+    "price": 31000,
+    "compareAtPrice": 31000,
+    "highlight": "Khử mùi hiệu quả — giữ chuồng khô thoáng",
+    "composition": [
+      "Bacillus subtilis — phân huỷ chất hữu cơ, giảm mùi hôi",
+      "Lactobacillus plantarum — hạn chế vi khuẩn gây bệnh",
+      "Enzyme Protease & Cellulase — phân giải protein, cellulose trong chất thải"
+    ],
+    "benefits": [
+      "Khử mùi hôi hiệu quả, giữ nền chuồng khô thoáng",
+      "Hạn chế vi khuẩn gây bệnh, giảm khí độc",
+      "Phân huỷ chất thải chuồng trại thành hữu cơ",
+      "Phù hợp nhiều mô hình: heo, gà, vịt, trâu, bò, dê, thỏ",
+      "An toàn cho vật nuôi, không cần thời gian cách ly"
+    ],
+    "description": "MENOVA BED là men vi sinh rắc trực tiếp lên nền chuồng hoặc dùng làm đệm lót sinh học, giúp giảm mùi hôi, hạn chế mầm bệnh và giữ môi trường chăn nuôi khô ráo, sạch sẽ hơn.",
+    "packSize": "Gói 500g — rắc được 100–150m² nền chuồng",
+    "usage": [
+      { "label": "Rắc trực tiếp", "detail": "Rắc đều túi 500g cho 100–150m² nền chuồng." },
+      { "label": "Làm đệm lót (cách nhanh)", "detail": "Trộn 1kg MENOVA BED + 3kg cám gạo/ngô + 1 lít nước, rắc cho 200–250m² nền đã trải trấu dày 7–10cm." },
+      { "label": "Làm đệm lót (ủ men trước)", "detail": "Trộn 1kg MENOVA BED + 1kg cám gạo + 4 lít nước, ủ kín 24–36 giờ, rắc đều lên 200–250m² nền trấu dày tối thiểu 7cm, dùng được 5–7 ngày." },
+      { "label": "Gia cầm mới nhập đàn", "detail": "Giúp chống cắn mổ, chống stress, hết mùi, giảm khí độc và mầm bệnh, giảm bệnh hô hấp và tiêu hoá." },
+      { "label": "Heo sơ sinh & heo nái", "detail": "Xoa lên heo sơ sinh giúp giữ ấm, nhanh khô da, hạn chế viêm rốn. Với heo nái: sát trùng sau sinh, làm khô sản dịch, rắc nền chuồng chống trơn trượt." }
+    ],
+    "storage": "Không trộn với hoá chất, thuốc trừ sâu. An toàn cho vật nuôi. Bảo quản nơi khô ráo, thoáng mát dưới 30°C, tránh nắng trực tiếp, đóng kín bao bì sau khi dùng, để xa tầm tay trẻ em.",
+    "image": "/images/product-real-bed.jpg",
+    "gallery": ["/images/gallery-bed-2.jpg", "/images/gallery-bed-3.jpg"],
+    "accent": "amber",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "slug": "menova-digest",
+    "name": "MENOVA DIGEST",
+    "tagline": "Men tiêu hoá thảo mộc cao cấp cho vật nuôi",
+    "category": "Hỗ trợ tiêu hoá vật nuôi",
+    "price": 123000,
+    "compareAtPrice": 123000,
+    "highlight": "Vi sinh · Enzyme · Kế sữa — 3 trong 1",
+    "composition": [
+      "Bacillus subtilis ≥ 1 × 10⁹ CFU/g",
+      "Lactobacillus plantarum ≥ 1 × 10⁷ CFU/g",
+      "Saccharomyces cerevisiae ≥ 1 × 10⁸ CFU/g",
+      "Enzyme Amylase 40.000 UI/kg, Protease 60.000 UI/kg, Cellulase 40.000 UI/kg",
+      "Cao kế sữa (Silymarin) 2.000 mg/kg"
+    ],
+    "benefits": [
+      "Cân bằng hệ vi sinh đường ruột, ổn định tiêu hoá",
+      "Phân giải tinh bột, protein, chất xơ nhờ enzyme",
+      "Hỗ trợ chức năng gan, chuyển hoá dinh dưỡng nhờ kế sữa",
+      "Vật nuôi hấp thu dinh dưỡng tốt hơn, ăn khoẻ lớn đều",
+      "Không kháng sinh, hoóc-môn, chất cấm"
+    ],
+    "description": "MENOVA DIGEST kết hợp vi sinh probiotic, enzyme tiêu hoá và thảo mộc kế sữa (silymarin) — hỗ trợ vật nuôi tiêu hoá tốt hơn, hấp thu dinh dưỡng hiệu quả hơn và hỗ trợ chức năng gan, phù hợp heo, gà, vịt, trâu, bò, dê.",
+    "packSize": "Gói 500g",
+    "usage": [
+      { "label": "Gà, vịt, ngan, cút", "detail": "Pha 1g cho 1 lít nước uống, hoặc trộn 100g cho 50kg thức ăn. Dùng liên tục đến khi xuất bán." },
+      { "label": "Trâu, bò, heo, dê", "detail": "Trộn 100g cho 100kg thức ăn. Dùng liên tục đến khi xuất bán." }
+    ],
+    "storage": "Độ ẩm ≤10%, không kháng sinh, hoóc-môn, chất cấm. Bảo quản nơi khô ráo, thoáng mát dưới 30°C, tránh nắng trực tiếp, đóng kín bao bì sau khi dùng, để xa tầm tay trẻ em.",
+    "image": "/images/product-real-digest.jpg",
+    "gallery": ["/images/gallery-digest-2.jpg", "/images/gallery-digest-3.jpg"],
+    "accent": "plum",
+    "featured": true
+  }
+]

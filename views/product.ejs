@@ -1,0 +1,149 @@
+<%- include('partials/header') %>
+
+<section class="page-head">
+  <div class="container">
+    <p class="breadcrumb"><a href="/">Trang chủ</a> / <a href="/san-pham">Sản phẩm</a> / <span><%= product.name %></span></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="product-detail">
+      <div>
+        <div class="product-detail__media showcase-item__media--<%= product.accent %>" id="main-media">
+          <img src="<%= product.image %>" alt="<%= product.name %>" id="main-image" />
+        </div>
+        <% const galleryImgs = [product.image, ...(product.gallery || [])]; %>
+        <% if (galleryImgs.length > 1) { %>
+        <div class="product-thumbs">
+          <% galleryImgs.forEach((img, i) => { %>
+            <button type="button" class="product-thumb <%= i === 0 ? 'is-active' : '' %>" data-img="<%= img %>" aria-label="Xem ảnh <%= i + 1 %>">
+              <img src="<%= img %>" alt="" />
+            </button>
+          <% }) %>
+        </div>
+        <% } %>
+      </div>
+      <div>
+        <p class="showcase-item__category"><%= product.category %></p>
+        <h1 class="h2 mt-0"><%= product.name %></h1>
+        <p class="lede"><%= product.tagline %></p>
+        <span class="product-detail__cfu"><%= product.highlight %></span>
+        <div class="product-detail__price">
+          <% if (product.compareAtPrice > product.price) { %>
+            <span class="price-compare"><%= product.compareAtPrice.toLocaleString('vi-VN') %>₫</span>
+          <% } %>
+          <span class="price"><%= product.price.toLocaleString('vi-VN') %>₫</span>
+          <span style="color: var(--ink-soft); font-size: var(--fs-300);">/ gói 500g</span>
+        </div>
+
+        <h3>Thành phần chính</h3>
+        <ol class="strain-list">
+          <% product.composition.forEach(s => { %>
+            <li><%= s %></li>
+          <% }) %>
+        </ol>
+
+        <ul class="showcase-item__benefits" style="margin-bottom: var(--space-4);">
+          <% product.benefits.forEach(b => { %>
+            <li><%= b %></li>
+          <% }) %>
+        </ul>
+
+        <div class="qty-row">
+          <div class="qty-stepper">
+            <button type="button" id="qty-minus" aria-label="Giảm số lượng">−</button>
+            <input type="number" id="qty-input" value="1" min="1" max="20" aria-label="Số lượng" />
+            <button type="button" id="qty-plus" aria-label="Tăng số lượng">+</button>
+          </div>
+          <span style="color: var(--ink-soft); font-size: var(--fs-300);"><%= product.packSize %></span>
+        </div>
+
+        <div style="display:flex; gap: var(--space-2); flex-wrap: wrap;">
+          <button type="button" id="add-to-cart" class="btn btn--primary">Thêm vào giỏ</button>
+          <a href="/gio-hang" class="btn btn--outline" id="buy-now">Mua ngay</a>
+        </div>
+        <p id="add-confirm" class="form-status form-status--success" style="display:none; margin-top: var(--space-3);">Đã thêm <%= product.name %> vào giỏ hàng.</p>
+
+        <div class="product-tabs">
+          <div class="product-tabs__panel">
+            <h4>Mô tả sản phẩm</h4>
+            <p><%= product.description %></p>
+          </div>
+          <div class="product-tabs__panel">
+            <h4>Hướng dẫn sử dụng</h4>
+            <dl class="usage-list">
+              <% product.usage.forEach(u => { %>
+                <dt><%= u.label %></dt>
+                <dd><%= u.detail %></dd>
+              <% }) %>
+            </dl>
+          </div>
+          <div class="product-tabs__panel">
+            <h4>Bảo quản &amp; lưu ý</h4>
+            <p><%= product.storage %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<% if (related.length) { %>
+<section class="section section--tight">
+  <div class="container">
+    <div class="stack-head">
+      <h2>Sản phẩm liên quan</h2>
+    </div>
+    <div class="product-grid">
+      <% related.forEach(p => { %>
+      <a href="/san-pham/<%= p.slug %>" class="product-card">
+        <div class="product-card__media showcase-item__media--<%= p.accent %>">
+          <img src="<%= p.image %>" alt="" width="140" height="140" />
+        </div>
+        <p class="product-card__category"><%= p.category %></p>
+        <h3 class="product-card__name"><%= p.name %></h3>
+        <p class="product-card__tagline"><%= p.tagline %></p>
+        <div class="product-card__footer">
+          <span class="price"><%= p.price.toLocaleString('vi-VN') %>₫</span>
+          <span class="btn btn--outline btn--sm">Xem chi tiết</span>
+        </div>
+      </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<script>
+  const PRODUCT = <%- JSON.stringify({ slug: product.slug, name: product.name, price: product.price, image: product.image, accent: product.accent }) %>;
+
+  const qtyInput = document.getElementById('qty-input');
+  document.getElementById('qty-minus').addEventListener('click', () => {
+    qtyInput.value = Math.max(1, Number(qtyInput.value) - 1);
+  });
+  document.getElementById('qty-plus').addEventListener('click', () => {
+    qtyInput.value = Math.min(20, Number(qtyInput.value) + 1);
+  });
+
+  function addCurrentToCart() {
+    const qty = Math.max(1, Number(qtyInput.value) || 1);
+    cartAdd(PRODUCT, qty);
+    const confirm = document.getElementById('add-confirm');
+    confirm.style.display = 'block';
+    setTimeout(() => (confirm.style.display = 'none'), 3000);
+  }
+
+  document.getElementById('add-to-cart').addEventListener('click', addCurrentToCart);
+  document.getElementById('buy-now').addEventListener('click', addCurrentToCart);
+
+  document.querySelectorAll('.product-thumb').forEach((thumb) => {
+    thumb.addEventListener('click', () => {
+      document.getElementById('main-image').src = thumb.dataset.img;
+      document.querySelectorAll('.product-thumb').forEach((t) => t.classList.remove('is-active'));
+      thumb.classList.add('is-active');
+    });
+  });
+</script>
+
+<%- include('partials/footer') %>

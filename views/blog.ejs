@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<section class="page-head">
+  <div class="container">
+    <p class="breadcrumb"><a href="/">Trang chủ</a> / <span>Góc kiến thức</span></p>
+    <h1>Hiểu đúng về hệ vi sinh, trước khi chọn sản phẩm</h1>
+    <p class="lede">Những bài viết ngắn gọn, dựa trên dữ liệu nghiên cứu, giúp bạn chọn đúng và dùng đúng men vi sinh.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="post-grid">
+      <% posts.forEach(post => { %>
+      <a href="/blog/<%= post.slug %>" class="post-card">
+        <div class="post-card__media"><img src="<%= post.image %>" alt="" /></div>
+        <div class="post-card__meta"><span><%= post.category %></span><span><%= post.readTime %></span></div>
+        <h3 class="post-card__title"><%= post.title %></h3>
+        <p style="color: var(--ink-soft);"><%= post.excerpt %></p>
+      </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

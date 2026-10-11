@@ -1,0 +1,100 @@
+<%- include('partials/header') %>
+
+<section class="page-head">
+  <div class="container">
+    <p class="breadcrumb"><a href="/">Trang chủ</a> / <span>Liên hệ</span></p>
+    <h1>Chúng tôi sẵn sàng lắng nghe</h1>
+    <p class="lede">Có câu hỏi về sản phẩm, đơn hàng, hoặc muốn hợp tác phân phối? Để lại lời nhắn, đội ngũ MENOVA sẽ phản hồi trong 1 ngày làm việc.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+      <div class="contact-info">
+        <h3 class="mt-0">Thông tin liên hệ</h3>
+        <ul>
+          <li>
+            <div>
+              <strong>Hotline</strong>
+              <span><a href="tel:1900636999"><%= site.phone %></a> (8:00 - 20:00, cả tuần)</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Email</strong>
+              <span><a href="mailto:<%= site.email %>"><%= site.email %></a></span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Văn phòng</strong>
+              <span><%= site.address %></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div id="contact-status"></div>
+        <form id="contact-form">
+          <div class="form-row form-row--2">
+            <div class="form-field">
+              <label for="c-name">Họ và tên</label>
+              <input type="text" id="c-name" name="name" required />
+            </div>
+            <div class="form-field">
+              <label for="c-phone">Số điện thoại (không bắt buộc)</label>
+              <input type="tel" id="c-phone" name="phone" />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="c-email">Email</label>
+            <input type="email" id="c-email" name="email" required />
+          </div>
+          <div class="form-field">
+            <label for="c-message">Nội dung</label>
+            <textarea id="c-message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" id="contact-submit">Gửi lời nhắn</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.getElementById('contact-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById('contact-submit');
+    const statusEl = document.getElementById('contact-status');
+    btn.disabled = true;
+    btn.textContent = 'Đang gửi...';
+
+    const payload = {
+      name: document.getElementById('c-name').value.trim(),
+      phone: document.getElementById('c-phone').value.trim(),
+      email: document.getElementById('c-email').value.trim(),
+      message: document.getElementById('c-message').value.trim(),
+    };
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Không thể gửi lời nhắn.');
+      statusEl.innerHTML = '<div class="form-status form-status--success">Đã gửi lời nhắn. Cảm ơn bạn, MENOVA sẽ phản hồi sớm nhất.</div>';
+      e.target.reset();
+    } catch (err) {
+      statusEl.innerHTML = `<div class="form-status form-status--error">${err.message}</div>`;
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Gửi lời nhắn';
+    }
+  });
+</script>
+
+<%- include('partials/footer') %>

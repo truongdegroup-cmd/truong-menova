@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "slug": "vi-sao-nen-u-men-thuc-an-chan-nuoi",
+    "title": "Vì sao nên ủ men thức ăn chăn nuôi thay vì cho ăn sống hoặc nấu chín mỗi ngày",
+    "excerpt": "Nấu cám mỗi ngày tốn củi, tốn công, mà vật nuôi chưa chắc hấp thu tốt hơn. Ủ men đúng cách giúp thức ăn dễ tiêu hơn và tiết kiệm cả thời gian lẫn chi phí.",
+    "category": "Kiến thức nền",
+    "readTime": "6 phút đọc",
+    "date": "2026-08-12",
+    "image": "/images/blog-feed-ferment.svg",
+    "content": [
+      "Nhiều hộ chăn nuôi vẫn giữ thói quen nấu chín thức ăn mỗi ngày trước khi cho vật nuôi ăn, với suy nghĩ nấu chín sẽ dễ tiêu hơn và an toàn hơn. Nhưng việc này tốn củi, tốn thời gian, và với một số loại nguyên liệu như cám gạo, cám ngô, nấu chín không làm tăng đáng kể giá trị dinh dưỡng so với ủ men đúng cách.",
+      "Khi ủ men, các chủng vi sinh vật có lợi như Bacillus subtilis, Lactobacillus plantarum cùng enzyme Protease, Cellulase sẽ phân giải tinh bột, protein và chất xơ trong nguyên liệu thành dạng dễ hấp thu hơn — tương tự cách dạ dày tiêu hoá thức ăn, nhưng diễn ra trước khi vật nuôi ăn. Kết quả là thức ăn sau ủ thường thơm hơn, mềm hơn, và vật nuôi ăn ngon miệng hơn so với thức ăn sống hoặc nấu chín để nguội.",
+      "Một lợi ích khác ít được nhắc tới: men ủ đúng cách giúp ổn định hệ vi sinh đường ruột của vật nuôi ngay từ thức ăn, thay vì chỉ trông chờ vào sức đề kháng tự nhiên. Điều này đặc biệt quan trọng với vật nuôi non hoặc trong giai đoạn chuyển đổi thức ăn, khi hệ tiêu hoá còn nhạy cảm.",
+      "Về mặt chi phí, một gói men 500g có thể ủ được 14–55kg nguyên liệu tuỳ loại, trong khi thời gian ủ chỉ 2–10 ngày tuỳ nguyên liệu — ngắn hơn nhiều so với công sức nấu nướng mỗi ngày cộng dồn lại trong cùng khoảng thời gian đó."
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "xu-ly-mui-hoi-chuong-trai-bang-vi-sinh",
+    "title": "Xử lý mùi hôi chuồng trại bằng vi sinh: cách làm không cần hoá chất",
+    "excerpt": "Mùi hôi chuồng trại không chỉ ảnh hưởng hàng xóm mà còn là dấu hiệu vi khuẩn gây bệnh đang phát triển. Vi sinh xử lý tận gốc thay vì chỉ che mùi tạm thời.",
+    "category": "Hướng dẫn chăn nuôi",
+    "readTime": "5 phút đọc",
+    "date": "2026-09-03",
+    "image": "/images/blog-barn-odor.svg",
+    "content": [
+      "Mùi hôi từ chuồng trại chủ yếu đến từ quá trình phân huỷ chất thải hữu cơ bởi vi khuẩn gây hại, sinh ra khí NH3 (amoniac) và H2S — hai loại khí vừa gây mùi khó chịu, vừa ảnh hưởng đến hô hấp của vật nuôi nếu tích tụ lâu ngày. Nhiều hộ chăn nuôi xử lý bằng cách xịt hoá chất khử mùi, nhưng cách này chỉ che mùi tạm thời chứ không giải quyết nguồn gốc.",
+      "Vi sinh xử lý theo cơ chế khác: các chủng như Bacillus subtilis và Lactobacillus plantarum cạnh tranh môi trường sống với vi khuẩn gây mùi, đồng thời tiết enzyme phân giải chất thải hữu cơ thành dạng ổn định hơn, ít sinh khí hôi hơn. Đây là lý do rắc men vi sinh lên nền chuồng thường cho hiệu quả kéo dài hơn xịt hoá chất, dù thời gian thấy hiệu quả ban đầu có thể chậm hơn vài ngày.",
+      "Để hiệu quả, nên rắc đều men lên toàn bộ nền chuồng chứ không chỉ khu vực tụ phân, và duy trì định kỳ thay vì chỉ dùng một lần khi chuồng đã quá hôi. Với chuồng dùng đệm lót sinh học (trấu, mùn cưa trộn men), nên đảm bảo độ dày đệm lót tối thiểu 7cm để vi sinh có đủ không gian hoạt động.",
+      "Một điểm cộng khi xử lý mùi bằng vi sinh: chất thải sau xử lý thường phân huỷ nhanh hơn thành dạng hữu cơ, có thể tận dụng làm phân bón cho cây trồng thay vì phải xử lý bỏ đi."
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "u-rac-nha-bep-thanh-phan-huu-co-tai-nha",
+    "title": "Ủ rác nhà bếp thành phân hữu cơ tại nhà: hướng dẫn từng bước",
+    "excerpt": "Rau củ hỏng, vỏ trái cây, cơm thừa mỗi ngày đều có thể biến thành phân bón cho vườn rau, thay vì đổ bỏ. Chỉ cần đúng men vi sinh và vài bước đơn giản.",
+    "category": "Hướng dẫn làm vườn",
+    "readTime": "5 phút đọc",
+    "date": "2026-09-21",
+    "image": "/images/blog-compost-home.svg",
+    "content": [
+      "Một gia đình trung bình thải ra vài kg rác hữu cơ mỗi tuần — rau củ hỏng, vỏ trái cây, cơm thừa, bã trà cà phê. Phần lớn số này bị đổ bỏ chung với rác thải sinh hoạt, trong khi thực chất đây là nguồn nguyên liệu tốt để ủ thành phân hữu cơ cho vườn rau, chậu cây tại nhà.",
+      "Cách làm không phức tạp: băm nhỏ rác thải nhà bếp, rắc đều men vi sinh lên từng lớp trong thùng ủ, đổ nước xấp mặt rác, rồi đậy kín. Men vi sinh sẽ đẩy nhanh quá trình phân huỷ chất hữu cơ, đồng thời ức chế vi khuẩn gây bệnh như E.coli và trứng giun sán — giúp quá trình ủ an toàn hơn so với để rác tự phân huỷ ngoài trời.",
+      "Sau 7–15 ngày đậy kín, rác sẽ phân huỷ thành hỗn hợp gồm phần dịch lỏng và phần bã. Dịch sau ủ có thể pha loãng với nước để tưới cây, còn phần bã dùng trộn với đất để cải tạo đất trồng — cả hai đều giàu dinh dưỡng hữu cơ hơn nhiều so với đất thông thường.",
+      "Lưu ý quan trọng: nên để thùng ủ ở nơi thoáng mát, tránh ánh nắng trực tiếp, và không mở nắp thường xuyên trong thời gian ủ vì sẽ làm chậm quá trình lên men. Nếu mùi vẫn còn nồng sau khi ủ xong, có thể tăng liều lượng men gấp 2–3 lần cho các mẻ sau."
+    ]
+  }
+]

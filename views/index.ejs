@@ -1,0 +1,228 @@
+<%- include('partials/header') %>
+
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <h1>Mỗi việc nhà nông, một loại men đúng việc.</h1>
+      <p class="lede">MENOVA là 5 chế phẩm vi sinh ứng dụng thực tế trong chăn nuôi và trồng trọt — ủ thức ăn, ủ phân hữu cơ, cải tạo đất, khử mùi chuồng trại, hỗ trợ tiêu hoá vật nuôi. Không cần đun nấu, không cần máy móc, chỉ cần đúng liều lượng.</p>
+      <div class="hero__ctas">
+        <a href="/san-pham" class="btn btn--primary">Xem sản phẩm</a>
+        <a href="/ve-menova" class="btn btn--on-dark">Tìm hiểu về MENOVA</a>
+      </div>
+      <div class="hero__trust">
+        <div><strong>5 sản phẩm</strong>mỗi loại giải quyết một việc cụ thể</div>
+        <div><strong>Đã kiểm nghiệm</strong>tại Viện Hoá học, Viện Hàn lâm KH&amp;CN Việt Nam</div>
+        <div><strong>500g/gói</strong>liều dùng rõ ràng theo từng vật nuôi, cây trồng</div>
+      </div>
+    </div>
+    <div class="hero__art" aria-hidden="true">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="200" cy="210" r="112" fill="#cf8a2e"/>
+        <circle cx="90" cy="120" r="34" fill="#a8c256"/>
+        <circle cx="320" cy="110" r="22" fill="#2f6b7a"/>
+        <circle cx="330" cy="280" r="40" fill="#faf9f3" opacity="0.92"/>
+        <circle cx="70" cy="290" r="16" fill="#2f6b7a" opacity="0.85"/>
+        <circle cx="260" cy="60" r="12" fill="#faf9f3"/>
+        <circle cx="120" cy="330" r="10" fill="#cf8a2e" opacity="0.8"/>
+        <text x="200" y="202" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="40" font-weight="700" fill="#112620">3 tỷ</text>
+        <text x="200" y="228" text-anchor="middle" font-family="'Be Vietnam Pro', sans-serif" font-size="14" fill="#112620">CFU Bacillus/g (MENOVA F)</text>
+      </svg>
+    </div>
+  </div>
+</section>
+<div class="divider-wedge" aria-hidden="true"></div>
+
+<section class="section">
+  <div class="container">
+    <div class="insight">
+      <p class="eyebrow"><span class="dot"></span>Vì sao MENOVA tồn tại</p>
+      <p class="quote">Bà con mất cả buổi nấu cám, tốn củi, tốn công — trong khi men vi sinh đúng chủng có thể làm việc đó qua một đêm, không cần lửa.</p>
+      <cite>— Lý do MENOVA ra đời: rút ngắn công việc đồng áng mỗi ngày, không đổi lấy chất lượng.</cite>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="stack-head">
+      <p class="eyebrow"><span class="dot"></span>Sản phẩm được tin dùng</p>
+      <h2>Mỗi sản phẩm, một việc nhà nông</h2>
+    </div>
+    <div class="showcase-list">
+      <% products.forEach(p => { %>
+      <div class="showcase-item">
+        <div class="showcase-item__media showcase-item__media--<%= p.accent %>">
+          <img src="<%= p.image %>" alt="" width="140" height="140" />
+        </div>
+        <div>
+          <p class="showcase-item__category"><%= p.category %></p>
+          <h3 class="showcase-item__name"><a href="/san-pham/<%= p.slug %>"><%= p.name %></a></h3>
+          <p class="showcase-item__tagline"><%= p.tagline %></p>
+          <ul class="showcase-item__benefits">
+            <% p.benefits.slice(0, 2).forEach(b => { %>
+              <li><%= b %></li>
+            <% }) %>
+          </ul>
+          <div class="showcase-item__footer">
+            <span class="price"><%= p.price.toLocaleString('vi-VN') %>₫<span style="font-weight:400; color:var(--ink-soft); font-size: var(--fs-300);"> / gói 500g</span></span>
+            <a href="/san-pham/<%= p.slug %>" class="btn btn--outline btn--sm">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <figure class="photo-banner">
+      <img src="/images/home-ecosystem-banner.jpg" alt="Hệ sinh thái sản phẩm MENOVA: FERMENT ủ thức ăn, BED rắc chuồng, DIGEST hỗ trợ tiêu hoá, GREEN ủ rác hữu cơ" loading="lazy" />
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="stack-head">
+      <p class="eyebrow"><span class="dot"></span>Kiểm nghiệm độc lập</p>
+      <h2>Không chỉ nói suông — có phiếu kết quả phân tích</h2>
+      <p class="lede">Mẫu MENOVA được gửi kiểm nghiệm tại Trung tâm Phổ cộng hưởng từ hạt nhân, Viện Hoá học — Viện Hàn lâm Khoa học và Công nghệ Việt Nam, theo phương pháp tham chiếu Tiêu chuẩn và Dược điển Việt Nam.</p>
+    </div>
+    <div class="lab-panel">
+      <div class="lab-stats">
+        <div class="lab-panel__stat">
+          <span class="lab-panel__stat-value">1,8×10⁶</span>
+          <span class="lab-panel__stat-label">CFU/g Bacillus subtilis, đo tại Viện Hoá học</span>
+        </div>
+        <div class="lab-panel__stat">
+          <span class="lab-panel__stat-value">1,7×10⁸</span>
+          <span class="lab-panel__stat-label">CFU/g Saccharomyces cerevisiae, đo tại Viện Hoá học</span>
+        </div>
+        <div class="lab-panel__stat">
+          <span class="lab-panel__stat-value">5</span>
+          <span class="lab-panel__stat-label">sản phẩm, mỗi sản phẩm một ứng dụng cụ thể</span>
+        </div>
+        <div class="lab-panel__stat">
+          <span class="lab-panel__stat-value">0</span>
+          <span class="lab-panel__stat-label">kháng sinh, hoóc-môn, chất cấm trong thành phần</span>
+        </div>
+      </div>
+      <div class="story-grid__copy">
+        <p class="quote" style="color: var(--paper); font-size: var(--fs-600);">"Chúng tôi gửi mẫu kiểm nghiệm độc lập trước khi đưa ra thị trường, không chỉ công bố một chiều trên bao bì."</p>
+        <p style="color: rgba(241,243,234,0.7); margin-top: var(--space-2); font-size: var(--fs-300);">Phiếu kết quả phân tích, Viện Hoá học — Viện Hàn lâm KH&amp;CN Việt Nam</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <figure class="photo-banner">
+      <img src="/images/home-process-banner.jpg" alt="Quy trình sản xuất MENOVA: lựa chọn nguyên liệu, phối trộn theo công thức, kiểm tra chất lượng, đóng gói thành phẩm" loading="lazy" />
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="stack-head">
+      <p class="eyebrow"><span class="dot"></span>Bắt đầu như thế nào</p>
+      <h2>Ba bước để dùng đúng, hiệu quả đúng</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <h3>Chọn đúng sản phẩm cho đúng việc</h3>
+        <p>Ủ thức ăn, ủ phân hữu cơ, cải tạo đất, khử mùi chuồng trại, hay hỗ trợ tiêu hoá vật nuôi — mỗi việc có một sản phẩm riêng.</p>
+      </div>
+      <div class="step">
+        <h3>Pha đúng tỉ lệ, đúng liều lượng</h3>
+        <p>Mỗi sản phẩm có bảng liều riêng theo loại nguyên liệu, diện tích hoặc vật nuôi — xem kỹ ở trang chi tiết sản phẩm.</p>
+      </div>
+      <div class="step">
+        <h3>Theo dõi hiệu quả</h3>
+        <p>Mùi chuồng giảm sau vài ngày, thức ăn lên men dùng được sau 2–4 ngày, đất và cây phục hồi rõ sau vài tuần dùng đều.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark">
+  <div class="container">
+    <div class="stack-head">
+      <p class="eyebrow"><span class="dot"></span>Bà con nói gì</p>
+      <h2>Trải nghiệm thật từ nhà nông dùng MENOVA</h2>
+    </div>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p class="quote">"Từ ngày dùng men vi sinh MENOVA, đàn lợn ăn khoẻ, lớn nhanh, chuồng sạch hơn hẳn, không còn mùi khó chịu nữa."</p>
+        <div class="testimonial__who">
+          <span class="testimonial__avatar" style="background:#cf8a2e;">T</span>
+          <span>Anh Hoàng Văn Thắng, hộ chăn nuôi lợn — Thanh Hoá</span>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p class="quote">"Gà ăn khoẻ, lông mượt, ít bệnh, đặc biệt chuồng khô ráo và không còn mùi hôi như trước."</p>
+        <div class="testimonial__who">
+          <span class="testimonial__avatar" style="background:#2f6b7a;">H</span>
+          <span>Chị Nguyễn Thị Hà, hộ chăn nuôi gà — Nam Định</span>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p class="quote">"Tôi ủ thức ăn xanh bằng MENOVA, trâu bò ăn rất thích, tiêu hoá tốt, ít rối loạn, khoẻ mạnh hơn."</p>
+        <div class="testimonial__who">
+          <span class="testimonial__avatar" style="background:#a8c256;">Q</span>
+          <span>Anh Lò Văn Quân, hộ chăn nuôi trâu bò — Sơn La</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <figure class="photo-banner">
+      <img src="/images/home-farmer-banner.jpg" alt="MENOVA đồng hành cùng bà con chăn nuôi trên khắp cả nước" loading="lazy" />
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="flex-between stack-head">
+      <h2>Góc kiến thức nhà nông</h2>
+      <a href="/blog" class="btn btn--ghost">Xem tất cả bài viết</a>
+    </div>
+    <div class="post-grid">
+      <% posts.forEach(post => { %>
+      <a href="/blog/<%= post.slug %>" class="post-card">
+        <div class="post-card__media"><img src="<%= post.image %>" alt="" /></div>
+        <div class="post-card__meta"><span><%= post.category %></span><span><%= post.readTime %></span></div>
+        <h3 class="post-card__title"><%= post.title %></h3>
+      </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <figure class="photo-banner">
+      <img src="/images/home-dealer-banner.jpg" alt="Hợp tác đại lý cùng MENOVA — sản phẩm tốt, thị trường rộng, đồng hành lâu dài" loading="lazy" />
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <h2>Sẵn sàng nuôi khoẻ từ gốc?</h2>
+      <div style="display:flex; gap: var(--space-2); flex-wrap: wrap;">
+        <a href="/san-pham" class="btn" style="background: var(--verdant-deep); color: var(--paper);">Chọn sản phẩm phù hợp</a>
+        <a href="<%= site.zalo %>" target="_blank" rel="noopener" class="btn btn--outline" style="border-color: var(--verdant-deep); color: var(--verdant-deep);">Nhắn Zalo tư vấn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

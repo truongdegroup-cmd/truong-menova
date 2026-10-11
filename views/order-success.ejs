@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+
+<section class="section" style="padding-top: var(--space-7);">
+  <div class="container">
+    <div class="order-result">
+      <% if (status === 'success') { %>
+        <div class="order-result__icon" style="background: #eaf1e2;">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#1b3b2f" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h1>Đặt hàng thành công</h1>
+        <p class="lede center">Cảm ơn bạn đã tin tưởng MENOVA. Chúng tôi sẽ liên hệ xác nhận đơn hàng trong vòng 24 giờ.</p>
+      <% } else { %>
+        <div class="order-result__icon" style="background: #fbe9ec;">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#6f2c3c" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </div>
+        <h1>Thanh toán chưa hoàn tất</h1>
+        <p class="lede center">Giao dịch chưa được xác nhận thành công. Đơn hàng của bạn vẫn được lưu lại, bạn có thể liên hệ MENOVA để hoàn tất thanh toán.</p>
+      <% } %>
+
+      <% if (orderCode) { %>
+        <span class="order-result__code">Mã đơn hàng: <%= orderCode %></span>
+      <% } %>
+
+      <div style="display:flex; gap: var(--space-2); justify-content:center; flex-wrap: wrap; margin-top: var(--space-3);">
+        <a href="/san-pham" class="btn btn--primary">Tiếp tục mua sắm</a>
+        <a href="/lien-he" class="btn btn--outline">Liên hệ hỗ trợ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

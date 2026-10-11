@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title><%= typeof pageTitle !== 'undefined' ? pageTitle : site.name + ' — ' + site.tagline %></title>
+  <meta name="description" content="<%= typeof pageDescription !== 'undefined' ? pageDescription : 'MENOVA - vi sinh ung dung chan nuoi va nong nghiep huu co. U thuc an chan nuoi, u phan huu co, khu mui chuong trai, ho tro tieu hoa vat nuoi.' %>" />
+  <link rel="icon" type="image/png" href="/images/favicon-256.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&family=Source+Serif+4:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <a href="#main" class="visually-hidden">Bỏ qua tới nội dung chính</a>
+  <header class="site-header">
+    <div class="container site-header__row">
+      <a href="/" class="logo"><img src="/images/logo-icon.png" alt="MENOVA" width="36" height="36" class="logo__mark" />MENOVA</a>
+      <nav class="nav-main" aria-label="Điều hướng chính">
+        <a href="/" aria-current="<%= page === 'home' ? 'page' : 'false' %>">Trang chủ</a>
+        <a href="/san-pham" aria-current="<%= page === 'products' || page === 'product' ? 'page' : 'false' %>">Sản phẩm</a>
+        <a href="/ve-menova" aria-current="<%= page === 'about' ? 'page' : 'false' %>">Về MENOVA</a>
+        <a href="/blog" aria-current="<%= page === 'blog' || page === 'blog-post' ? 'page' : 'false' %>">Góc kiến thức</a>
+        <a href="/lien-he" aria-current="<%= page === 'contact' ? 'page' : 'false' %>">Liên hệ</a>
+      </nav>
+      <div class="header-actions">
+        <a href="/gio-hang" class="cart-link" aria-label="Xem giỏ hàng">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Giỏ hàng
+          <span class="cart-count" id="cart-count">0</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Mở menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="nav-mobile container" id="nav-mobile" aria-label="Điều hướng di động">
+      <a href="/">Trang chủ</a>
+      <a href="/san-pham">Sản phẩm</a>
+      <a href="/ve-menova">Về MENOVA</a>
+      <a href="/blog">Góc kiến thức</a>
+      <a href="/lien-he">Liên hệ</a>
+    </nav>
+  </header>
+  <main id="main">

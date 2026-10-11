@@ -1,0 +1,43 @@
+<%- include('partials/header') %>
+
+<section class="page-head">
+  <div class="container">
+    <p class="breadcrumb"><a href="/">Trang chủ</a> / <a href="/blog">Góc kiến thức</a> / <span><%= post.title %></span></p>
+    <div class="post-card__meta" style="color: rgba(241,243,234,0.7);"><span><%= post.category %></span><span><%= post.readTime %></span><span><%= new Date(post.date).toLocaleDateString('vi-VN') %></span></div>
+    <h1 style="margin-top: var(--space-2);"><%= post.title %></h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="post-card__media" style="max-width: 640px; margin-bottom: var(--space-5);">
+      <img src="<%= post.image %>" alt="" />
+    </div>
+    <div class="post-body">
+      <% post.content.forEach(paragraph => { %>
+        <p><%= paragraph %></p>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<% if (related.length) { %>
+<section class="section section--tight">
+  <div class="container">
+    <div class="stack-head">
+      <h2>Bài viết liên quan</h2>
+    </div>
+    <div class="post-grid">
+      <% related.forEach(p => { %>
+      <a href="/blog/<%= p.slug %>" class="post-card">
+        <div class="post-card__media"><img src="<%= p.image %>" alt="" /></div>
+        <div class="post-card__meta"><span><%= p.category %></span><span><%= p.readTime %></span></div>
+        <h3 class="post-card__title"><%= p.title %></h3>
+      </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,41 @@
+<%- include('partials/header') %>
+
+<section class="page-head">
+  <div class="container">
+    <p class="breadcrumb"><a href="/">Trang chủ</a> / <span>Giỏ hàng</span></p>
+    <h1>Giỏ hàng của bạn</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div id="cart-empty" class="cart-empty" style="display:none;">
+      <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="60" cy="60" r="44" fill="#e4e7d9"/>
+        <circle cx="46" cy="50" r="8" fill="#cf8a2e" opacity="0.6"/>
+        <circle cx="76" cy="68" r="10" fill="#8c3a4d" opacity="0.5"/>
+        <circle cx="70" cy="42" r="5" fill="#a8c256"/>
+      </svg>
+      <h2>Giỏ hàng đang trống</h2>
+      <p class="lede center">Hãy chọn sản phẩm phù hợp với nhu cầu của bạn, chúng tôi sẽ giữ chỗ ở đây.</p>
+      <a href="/san-pham" class="btn btn--primary" style="margin-top: var(--space-3);">Xem sản phẩm</a>
+    </div>
+
+    <div id="cart-filled" class="cart-layout" style="display:none;">
+      <div>
+        <div id="cart-rows"></div>
+      </div>
+      <aside class="cart-summary">
+        <h3 class="mt-0">Tóm tắt đơn hàng</h3>
+        <div class="summary-row"><span>Tạm tính</span><span id="sum-subtotal">0₫</span></div>
+        <div class="summary-row"><span>Phí vận chuyển</span><span id="sum-shipping">0₫</span></div>
+        <p style="font-size: var(--fs-300); color: var(--ink-soft);">Miễn phí vận chuyển cho đơn từ 300.000₫</p>
+        <div class="summary-row summary-row--total"><span>Tổng cộng</span><span id="sum-total">0₫</span></div>
+        <a href="/thanh-toan" class="btn btn--primary btn--block" style="margin-top: var(--space-3);">Tiến hành thanh toán</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<script src="/js/cart-page.js"></script>
+<%- include('partials/footer') %>
