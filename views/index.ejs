@@ -58,7 +58,7 @@
             <% }) %>
           </ul>
           <div class="showcase-item__footer">
-            <span class="price"><%= p.price.toLocaleString('vi-VN') %>₫<span style="font-weight:400; color:var(--ink-soft); font-size: var(--fs-300);"> / gói 500g</span></span>
+            <span class="price"><%= p.price.toLocaleString('vi-VN') %>₫<span style="font-weight:400; color:var(--ink-soft); font-size: var(--fs-300);"> / <%= p.isCombo ? 'combo' : 'gói 500g' %></span></span>
             <a href="/san-pham/<%= p.slug %>" class="btn btn--outline btn--sm">Xem chi tiết</a>
           </div>
         </div>
@@ -86,11 +86,11 @@
     <div class="lab-panel">
       <div class="lab-stats">
         <div class="lab-panel__stat">
-          <span class="lab-panel__stat-value">1,8×10⁶</span>
+          <span class="lab-panel__stat-value">3×10⁹</span>
           <span class="lab-panel__stat-label">CFU/g Bacillus subtilis, đo tại Viện Hoá học</span>
         </div>
         <div class="lab-panel__stat">
-          <span class="lab-panel__stat-value">1,7×10⁸</span>
+          <span class="lab-panel__stat-value">1×10⁸</span>
           <span class="lab-panel__stat-label">CFU/g Saccharomyces cerevisiae, đo tại Viện Hoá học</span>
         </div>
         <div class="lab-panel__stat">

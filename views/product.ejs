@@ -34,10 +34,10 @@
             <span class="price-compare"><%= product.compareAtPrice.toLocaleString('vi-VN') %>₫</span>
           <% } %>
           <span class="price"><%= product.price.toLocaleString('vi-VN') %>₫</span>
-          <span style="color: var(--ink-soft); font-size: var(--fs-300);">/ gói 500g</span>
+          <span style="color: var(--ink-soft); font-size: var(--fs-300);">/ <%= product.isCombo ? 'combo' : 'gói 500g' %></span>
         </div>
 
-        <h3>Thành phần chính</h3>
+        <h3><%= product.isCombo ? 'Trong combo có' : 'Thành phần chính' %></h3>
         <ol class="strain-list">
           <% product.composition.forEach(s => { %>
             <li><%= s %></li>
@@ -116,7 +116,7 @@
 <% } %>
 
 <script>
-  const PRODUCT = <%- JSON.stringify({ slug: product.slug, name: product.name, price: product.price, image: product.image, accent: product.accent }) %>;
+  const PRODUCT = <%- JSON.stringify({ slug: product.slug, name: product.name, price: product.price, image: product.image, accent: product.accent, isCombo: !!product.isCombo }) %>;
 
   const qtyInput = document.getElementById('qty-input');
   document.getElementById('qty-minus').addEventListener('click', () => {

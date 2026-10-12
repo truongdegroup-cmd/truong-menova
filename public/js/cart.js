@@ -28,6 +28,7 @@ function cartAdd(product, qty = 1) {
       price: product.price,
       image: product.image,
       accent: product.accent,
+      isCombo: !!product.isCombo,
       qty,
     });
   }

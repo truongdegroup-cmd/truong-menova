@@ -182,5 +182,103 @@
     "gallery": ["/images/gallery-digest-full-1.jpg", "/images/gallery-digest-full-2.jpg", "/images/gallery-digest-full-3.jpg", "/images/gallery-digest-full-4.jpg", "/images/gallery-digest-full-5.jpg"],
     "accent": "plum",
     "featured": true
+  },
+  {
+    "id": 6,
+    "slug": "combo-nha-nong",
+    "name": "Combo Nhà Nông",
+    "tagline": "Men ủ thức ăn F + Men tiêu hoá DIGEST + Men rắc chuồng BED",
+    "category": "Combo tiết kiệm",
+    "price": 183000,
+    "compareAtPrice": 228750,
+    "highlight": "Combo 3 gói x 500g — tiết kiệm hơn mua lẻ",
+    "isCombo": true,
+    "composition": [
+      "1 gói MENOVA F (500g) — Men ủ chín thức ăn chăn nuôi",
+      "1 gói MENOVA DIGEST (500g) — Men tiêu hoá thế hệ mới",
+      "1 gói MENOVA BED (500g) — Men vi sinh rắc chuồng"
+    ],
+    "benefits": [
+      "Ủ thức ăn không đun nấu, đỡ tốn củi và công sức",
+      "Hỗ trợ tiêu hoá, hấp thu dinh dưỡng tốt hơn",
+      "Chuồng trại khô thoáng, hết mùi hôi",
+      "Mua trọn bộ tiết kiệm hơn mua lẻ từng gói"
+    ],
+    "description": "Chăn nuôi vất vả nhất là 3 việc: nấu cám mỗi ngày, vật nuôi ăn nhiều mà hấp thu kém, chuồng trại ẩm ướt hôi mùi. Combo Nhà Nông lo đủ cả 3 — từ thức ăn, tiêu hoá đến chuồng trại, phù hợp cho lợn, gà, vịt, ngan, trâu, bò, dê, thỏ.",
+    "packSize": "Combo 3 gói x 500g (F + DIGEST + BED)",
+    "usage": [
+      { "label": "MENOVA F — ủ nguyên liệu xanh", "detail": "100g men ủ được 25–33kg hỗn hợp (60–70% rau/chuối/bèo + 30–40% cám), không cần thêm nước, ủ kín 2–4 ngày." },
+      { "label": "MENOVA F — ủ tinh bột khô", "detail": "100g men ủ được 33–55kg cám/bột sắn, thêm 12–14 lít nước/40kg, ủ kín 2–4 ngày." },
+      { "label": "MENOVA DIGEST — trộn thức ăn / pha nước uống", "detail": "Gà, vịt, ngan, cút: 1g/1 lít nước hoặc 100g/50kg thức ăn. Trâu, bò, heo, dê: 100g/100kg thức ăn." },
+      { "label": "MENOVA BED — rắc nền chuồng", "detail": "Rắc trực tiếp 1 túi 500g cho 100–150m² nền chuồng, hoặc trộn 1kg BED + 3kg cám + 1 lít nước rắc cho 200–250m² nền đã rải trấu." }
+    ],
+    "storage": "Bảo quản nơi khô ráo, thoáng mát, không quá 30°C, tránh ánh nắng trực tiếp. Đóng kín bao bì sau khi mở. Để xa tầm tay trẻ em. Không trộn MENOVA BED với hoá chất, thuốc trừ sâu.",
+    "image": "/images/combo-nha-nong.jpg",
+    "accent": "amber",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "slug": "combo-yeu-cay",
+    "name": "Combo Yêu Cây",
+    "tagline": "Men ủ rác hữu cơ GREEN + Vi sinh đa năng BIO 4+",
+    "category": "Combo tiết kiệm",
+    "price": 138000,
+    "compareAtPrice": 172500,
+    "highlight": "Combo 2 gói x 500g — rác bếp thành phân, đất khoẻ cây tốt",
+    "isCombo": true,
+    "composition": [
+      "1 gói MENOVA GREEN (500g) — Men ủ rác hữu cơ nhà bếp",
+      "1 gói MENOVA BIO 4+ (500g) — Vi sinh đa năng cho nông nghiệp hữu cơ"
+    ],
+    "benefits": [
+      "Biến rác bếp (rau củ hỏng, vỏ trái cây, cơm thừa) thành phân hữu cơ",
+      "Cải tạo đất, kích thích bộ rễ phát triển",
+      "Phun cho cây trồng khoẻ, hạn chế nấm hại nhờ Trichoderma",
+      "Một vòng khép kín: rác bếp → phân hữu cơ → đất khoẻ → cây tốt"
+    ],
+    "description": "Mỗi ngày nhà bạn bỏ đi cả túi vỏ rau, cơm thừa, trong khi cây trong vườn đang cần phân hữu cơ. Combo Yêu Cây biến rác bếp thành phân, rồi bổ sung vi sinh để đất tơi xốp, rễ khoẻ, cây xanh tốt — phù hợp vườn rau gia đình, sân thượng, ban công, vườn cây ăn quả.",
+    "packSize": "Combo 2 gói x 500g (GREEN + BIO 4+)",
+    "usage": [
+      { "label": "MENOVA GREEN — ủ rác nhà bếp", "detail": "Băm nhỏ rác nhà bếp, rắc đều men lên từng lớp, đổ nước xấp mặt rác, đậy kín 7–15 ngày. Pha dịch sau ủ với nước để tưới cây, hoặc tưới cả bã lên đất. 500g ủ được 100–200kg rác." },
+      { "label": "MENOVA BIO 4+ — rau ăn lá, cây lương thực", "detail": "Bón lót 1–1,5kg/360m² trước khi gieo trồng, có thể trộn cùng phân hữu cơ hoặc NPK." },
+      { "label": "MENOVA BIO 4+ — cây ăn quả, cây công nghiệp", "detail": "Dùng 3–5kg/1.000m², bón vào các giai đoạn sinh trưởng, kết hợp phân hữu cơ." }
+    ],
+    "storage": "Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp. Đóng kín bao bì sau khi mở. Để xa tầm tay trẻ em. Vi sinh tự nhiên, an toàn với người, vật nuôi, thuỷ sản, không cần thời gian cách ly.",
+    "image": "/images/combo-yeu-cay.jpg",
+    "accent": "lime",
+    "featured": false
+  },
+  {
+    "id": 8,
+    "slug": "combo-an-khoe-tieu-tot",
+    "name": "Combo Ăn Khoẻ Tiêu Tốt",
+    "tagline": "Men ủ chín thức ăn F + Men tiêu hoá DIGEST",
+    "category": "Combo tiết kiệm",
+    "price": 158000,
+    "compareAtPrice": 197500,
+    "highlight": "Combo 2 gói x 500g — thức ăn ngon hơn, hấp thu tốt hơn",
+    "isCombo": true,
+    "composition": [
+      "1 gói MENOVA F (500g) — Men ủ chín thức ăn chăn nuôi",
+      "1 gói MENOVA DIGEST (500g) — Men tiêu hoá thế hệ mới"
+    ],
+    "benefits": [
+      "Ủ thức ăn không đun nấu, tiết kiệm củi và công sức",
+      "Hỗ trợ tiêu hoá, hấp thu dinh dưỡng tốt hơn",
+      "Vật nuôi ăn khoẻ, ít bệnh",
+      "1 gói F ủ được 150–250kg nguyên liệu, đủ dùng cả tháng"
+    ],
+    "description": "Nấu cám mỗi ngày vừa tốn củi, tốn công, mà vật nuôi ăn vào vẫn chưa hấp thu hết. Combo Ăn Khoẻ Tiêu Tốt giải quyết cả hai: MENOVA F ủ chín thức ăn không cần đun nấu, MENOVA DIGEST bổ sung men tiêu hoá giúp vật nuôi hấp thu dinh dưỡng tốt hơn — phù hợp lợn, gà, vịt, ngan, cút, trâu, bò, dê.",
+    "packSize": "Combo 2 gói x 500g (F + DIGEST)",
+    "usage": [
+      { "label": "MENOVA F — ủ nguyên liệu xanh", "detail": "25–33kg hỗn hợp (60–70% rau/chuối/bèo + 30–40% cám) trên 100g men, không cần thêm nước, ủ kín 2–4 ngày." },
+      { "label": "MENOVA F — ủ cá tạp", "detail": "14–20kg hỗn hợp (60% cá + 40% cám), nước xấp mặt, thêm 0,2–0,3kg muối, ủ 7–10 ngày." },
+      { "label": "MENOVA DIGEST — trộn thức ăn / pha nước uống", "detail": "Gà, vịt, ngan, cút: 1g/1 lít nước hoặc 100g/50kg thức ăn. Trâu, bò, heo, dê: 100g/100kg thức ăn, dùng liên tục đến khi xuất bán." }
+    ],
+    "storage": "Bảo quản nơi khô ráo, thoáng mát, không quá 30°C, tránh ánh nắng trực tiếp. Đóng kín bao bì sau khi mở. Để xa tầm tay trẻ em.",
+    "image": "/images/combo-an-khoe-tieu-tot.jpg",
+    "accent": "plum",
+    "featured": false
   }
 ]

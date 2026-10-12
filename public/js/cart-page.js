@@ -23,7 +23,7 @@ function renderCartPage() {
       <div class="cart-row__media"><img src="${item.image}" alt="" /></div>
       <div>
         <div class="cart-row__name">${item.name}</div>
-        <div class="cart-row__meta">${formatVND(item.price)} / hộp</div>
+        <div class="cart-row__meta">${formatVND(item.price)} / ${item.isCombo ? 'combo' : 'hộp'}</div>
       </div>
       <div class="qty-stepper">
         <button type="button" class="qty-dec" aria-label="Giảm số lượng">−</button>

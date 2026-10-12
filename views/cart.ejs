@@ -31,9 +31,12 @@
         <div class="summary-row"><span>Phí vận chuyển</span><span id="sum-shipping">0₫</span></div>
         <p style="font-size: var(--fs-300); color: var(--ink-soft);">Miễn phí vận chuyển cho đơn từ 300.000₫</p>
         <div class="summary-row summary-row--total"><span>Tổng cộng</span><span id="sum-total">0₫</span></div>
-        <button type="button" id="checkout-zalo-btn" class="btn btn--primary btn--block" data-zalo="<%= site.zalo %>" style="margin-top: var(--space-3);">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.83 1.44 5.36 3.7 7.03-.12.98-.46 2.3-1.3 3.47 1.6-.2 3.14-.9 4.33-1.78 1.02.3 2.12.46 3.27.46 5.52 0 10-4.03 10-9S17.52 2 12 2z"/></svg>
-          Đặt hàng qua Zalo
+        <button type="button" id="checkout-zalo-btn" class="btn btn--primary btn--block" data-zalo="<%= site.zalo %>" style="margin-top: var(--space-3); flex-direction: column; gap: 0.2em; line-height: 1.3;">
+          <span style="display:inline-flex; align-items:center; gap:0.6em;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.83 1.44 5.36 3.7 7.03-.12.98-.46 2.3-1.3 3.47 1.6-.2 3.14-.9 4.33-1.78 1.02.3 2.12.46 3.27.46 5.52 0 10-4.03 10-9S17.52 2 12 2z"/></svg>
+            Đặt hàng qua Zalo
+          </span>
+          <span style="font-size: var(--fs-300); font-weight: 600;">0869.688.384</span>
         </button>
         <p style="font-size: var(--fs-300); color: var(--ink-soft); margin-top: var(--space-2);">Bấm để mở Zalo nhắn tin cho MENOVA — nội dung đơn hàng đã được soạn sẵn, bạn chỉ cần dán và gửi.</p>
 
