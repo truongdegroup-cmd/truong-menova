@@ -21,16 +21,18 @@ function renderCartPage() {
       (item) => `
     <div class="cart-row" data-slug="${item.slug}">
       <div class="cart-row__media"><img src="${item.image}" alt="" /></div>
-      <div>
+      <div class="cart-row__info">
         <div class="cart-row__name">${item.name}</div>
         <div class="cart-row__meta">${formatVND(item.price)} / ${item.isCombo ? 'combo' : 'hộp'}</div>
       </div>
-      <div class="qty-stepper">
-        <button type="button" class="qty-dec" aria-label="Giảm số lượng">−</button>
-        <input type="number" class="qty-val" value="${item.qty}" min="1" max="20" aria-label="Số lượng" />
-        <button type="button" class="qty-inc" aria-label="Tăng số lượng">+</button>
+      <div class="cart-row__actions">
+        <div class="qty-stepper">
+          <button type="button" class="qty-dec" aria-label="Giảm số lượng">−</button>
+          <input type="number" class="qty-val" value="${item.qty}" min="1" max="20" aria-label="Số lượng" />
+          <button type="button" class="qty-inc" aria-label="Tăng số lượng">+</button>
+        </div>
+        <button type="button" class="cart-row__remove">Xoá</button>
       </div>
-      <button type="button" class="cart-row__remove">Xoá</button>
     </div>
   `
     )
