@@ -214,6 +214,7 @@
     ],
     "storage": "Bảo quản nơi khô ráo, thoáng mát, không quá 30°C, tránh ánh nắng trực tiếp. Đóng kín bao bì sau khi mở. Để xa tầm tay trẻ em. Không trộn MENOVA BED với hoá chất, thuốc trừ sâu.",
     "image": "/images/combo-nha-nong.jpg",
+    "gallery": ["/images/gallery-combo-nha-nong-1.jpg", "/images/gallery-combo-nha-nong-2.jpg", "/images/gallery-combo-nha-nong-3.jpg", "/images/gallery-combo-nha-nong-4.jpg"],
     "accent": "amber",
     "featured": false
   },
@@ -246,6 +247,7 @@
     ],
     "storage": "Bảo quản nơi khô ráo, thoáng mát, tránh ánh nắng trực tiếp. Đóng kín bao bì sau khi mở. Để xa tầm tay trẻ em. Vi sinh tự nhiên, an toàn với người, vật nuôi, thuỷ sản, không cần thời gian cách ly.",
     "image": "/images/combo-yeu-cay.jpg",
+    "gallery": ["/images/gallery-combo-yeu-cay-1.jpg", "/images/gallery-combo-yeu-cay-2.jpg", "/images/gallery-combo-yeu-cay-3.jpg", "/images/gallery-combo-yeu-cay-4.jpg"],
     "accent": "lime",
     "featured": false
   },
@@ -278,6 +280,7 @@
     ],
     "storage": "Bảo quản nơi khô ráo, thoáng mát, không quá 30°C, tránh ánh nắng trực tiếp. Đóng kín bao bì sau khi mở. Để xa tầm tay trẻ em.",
     "image": "/images/combo-an-khoe-tieu-tot.jpg",
+    "gallery": ["/images/gallery-combo-an-khoe-1.jpg", "/images/gallery-combo-an-khoe-2.jpg", "/images/gallery-combo-an-khoe-3.jpg", "/images/gallery-combo-an-khoe-4.jpg"],
     "accent": "plum",
     "featured": false
   }
